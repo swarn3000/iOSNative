@@ -24,17 +24,18 @@ public class SD {
         //throw new PendingException();
     }
 
-    /*@When("^I enter credentials \"([^\"]*)\" and \"([^\"]*)\"$")
+    @When("^I enter credentials \"([^\"]*)\" and \"([^\"]*)\"$")
     public void i_enter_credentials_and(String usr, String pwd) throws Throwable {
 
-        System.out.println("cerd");
+        System.out.println("cerd8");
         //homePage.typeTextField1(arg1);
         // Write code here that turns the phrase above into concrete actions
         //throw new PendingException();
-    }*/
+    }
 
     @Then("^I click on login button$")
     public void i_click_on_login_button() throws Throwable {
+        //homePage.checktest();
         System.out.println("last");
 
 
@@ -44,10 +45,10 @@ public class SD {
 
     @When("^I enter credentials \"([^\"]*)\"$")
     public void iEnterCredentials(String arg0) throws Throwable {
-
-        homePage.typeEmailAddress(arg0);
+//comment
+        //homePage.typeEmailAddress(arg0);
         System.out.println("cerd");
         // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
+        //throw new PendingException();
     }
 }

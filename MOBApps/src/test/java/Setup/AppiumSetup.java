@@ -27,18 +27,19 @@ public class AppiumSetup {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability(CapabilityType.BROWSER_NAME, "");
         capabilities.setCapability("appium-version","1.6");
-        capabilities.setCapability("deviceName", "iPhone 5");
+        capabilities.setCapability("deviceName", "iPhone 7 Plus");
         capabilities.setCapability("platformVersion", "10.3");
         capabilities.setCapability("platformName", "iOS");
         capabilities.setCapability("bundleId","com.bspot.casino101.test");
-        capabilities.setCapability("app","/Users/swarn/Library/Developer/Xcode/DerivedData/lounge7-ghqqcotpptsuxbdibzyyuhpniali/Build/Products/Debug-iphoneos/lounge7.app");
+        //capabilities.setCapability("app","/Users/swarn/Library/Developer/Xcode/DerivedData/lounge7-ghqqcotpptsuxbdibzyyuhpniali/Build/Products/Debug-iphonesimulator/lounge7.app");
+        capabilities.setCapability("app","/Users/swarn/Library/Developer/Xcode/DerivedData/lounge7-brsokuzbvogjlqfjpinkfxmqsymp/Build/Products/Debug-iphonesimulator/lounge7.app");
         //capabilities.setCapability("appPackage", "com.cucumberrntest");
         //capabilities.setCapability("appActivity", "com.cucumberrntest.MainActivity");
         //driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
 
 
 
-        capabilities.setCapability("udid","a8f3f946a84ebd9d573e6c359cfae7f358f55bcf");
+        //capabilities.setCapability("udid","a8f3f946a84ebd9d573e6c359cfae7f358f55bcf");
         //capabilities.setCapability("automationName" ,  "XCUITest");
         /*final File classpathRoot= new File(System.getProperty("user.dir"));
         final File appDir = new File(classpathRoot,"src/test/");

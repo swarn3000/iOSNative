@@ -14,15 +14,13 @@ public class HomePage extends AppiumSetup {
 
 
 
-    By test = MobileBy.AccessibilityId("OK");
+   //By test = MobileBy.AccessibilityId("ok");
 
-    public void typeEmailAddress(String text){
-        driver.findElement(test).sendKeys(text);
-    }
 
-   /* public void checktest(String uuser){
-        driver.findElement(test).sendKeys(uuser);
-    }*/
+   /*public void checktest(){
+   driver.findElement(test).click();
+   }*/
+}
 
   /*  By textField1 = MobileBy.AccessibilityId("Email");
     By textField2 = MobileBy.AccessibilityId("Password");
@@ -55,4 +53,4 @@ public class HomePage extends AppiumSetup {
         waitVar.until(ExpectedConditions.presenceOfElementLocated(result));
         return driver.findElement(result).getText();
     }*/
-}
+
