@@ -72,7 +72,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 26217882207,
+  "duration": 32371985847,
   "status": "passed"
 });
 formatter.scenario({
@@ -114,14 +114,14 @@ formatter.match({
   "location": "SD.i_open_application_on_device()"
 });
 formatter.result({
-  "duration": 2474379960,
+  "duration": 2267423669,
   "status": "passed"
 });
 formatter.match({
   "location": "SD.i_click_on_login_button()"
 });
 formatter.result({
-  "duration": 63666,
+  "duration": 51994,
   "status": "passed"
 });
 formatter.match({
@@ -134,15 +134,15 @@ formatter.match({
   "location": "SD.iEnterCredentials(String)"
 });
 formatter.result({
-  "duration": 2657934,
+  "duration": 2501929,
   "status": "passed"
 });
 formatter.after({
-  "duration": 554141074,
+  "duration": 535794394,
   "status": "passed"
 });
 formatter.before({
-  "duration": 24731833271,
+  "duration": 24313839537,
   "status": "passed"
 });
 formatter.scenario({
@@ -184,14 +184,14 @@ formatter.match({
   "location": "SD.i_open_application_on_device()"
 });
 formatter.result({
-  "duration": 2151711428,
+  "duration": 2065959348,
   "status": "passed"
 });
 formatter.match({
   "location": "SD.i_click_on_login_button()"
 });
 formatter.result({
-  "duration": 64822,
+  "duration": 37649,
   "status": "passed"
 });
 formatter.match({
@@ -204,11 +204,11 @@ formatter.match({
   "location": "SD.iEnterCredentials(String)"
 });
 formatter.result({
-  "duration": 115279,
+  "duration": 108117,
   "status": "passed"
 });
 formatter.after({
-  "duration": 562031877,
+  "duration": 568794272,
   "status": "passed"
 });
 });
