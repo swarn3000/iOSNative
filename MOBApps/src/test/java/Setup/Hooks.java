@@ -14,8 +14,9 @@ public class Hooks {
     AppiumSetup start = new AppiumSetup();
 
     @cucumber.api.java.Before
-    public void beforeHookfunction() throws MalformedURLException, InterruptedException{
+    public void beforeHookfunction() throws MalformedURLException, InterruptedException {
         start.createDriver();
+
     }
 
     @After

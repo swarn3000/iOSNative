@@ -2,10 +2,13 @@ package Setup;
 
 import com.codeborne.selenide.SelenideElement;
 import io.appium.java_client.MobileBy;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+
+import java.util.concurrent.TimeUnit;
 
 /**
  * Created by Swarn on 8/20/2017.
@@ -13,13 +16,55 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 public class HomePage extends AppiumSetup {
 
 
+    /*public void handlepopup(){
 
-   //By test = MobileBy.AccessibilityId("ok");
+        Alert alertOK = driver.switchTo().alert();
+        alertOK.dismiss();
+    }*/
+    /*public void checktest(){
+        driver.findElement(test).click();
+    }*/
+
+    //By test = MobileBy.xpath("/AppiumAUT/XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeImage");
+     //By test = MobileBy.xpath("/AppiumAUT/XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeImage/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeImage[2]");
+    By ClickOK = MobileBy.AccessibilityId("PermissionCheckForLocationAndAge");
+  // By test = MobileBy.AccessibilityId("Allow");
+    By ClickCreateAccountButton = MobileBy.AccessibilityId("GoToCreateAccountButtonID");
+    By CLickLoginButton = MobileBy.AccessibilityId("GoToLoginID");
+   // By EmailTextField = MobileBy.AccessibilityId("Email");
+   //By test1 = MobileBy.AccessibilityId("Like what you see? Create Account Login Try out in demo mode");
+   //By test1 = MobileBy.IosUIAutomation("OK");
+   //By test1 = MobileBy.AccessibilityId("OK");
+   //By check = MobileBy.AccessibilityId("Email");
+
+    public void clickokk(){
+
+        //driver.findElement(test).click();
+        //driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+
+        driver.findElement(ClickOK).click();
+        driver.findElement(ClickCreateAccountButton).click();
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.findElement(CLickLoginButton).click();
 
 
-   /*public void checktest(){
-   driver.findElement(test).click();
-   }*/
+    }
+
+    /*public void ok(String text){
+    driver.findElement(EmailTextField).sendKeys(text);
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        //driver.findElement(By.linkText(text));
+    }*/
+
+//   public void fillin(){
+//
+//       //driver.findElement(By.name("Allow"));
+//       //driver.findElement(By.name("OK"));
+//        //driver.findElement(By.id("Create Account")).click();
+//       //driver.findElement(test).sendKeys(text);
+//   }
+
+
 }
 
   /*  By textField1 = MobileBy.AccessibilityId("Email");

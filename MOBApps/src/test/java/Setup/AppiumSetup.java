@@ -1,8 +1,10 @@
 package Setup;
 
+import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.ios.IOSDriver;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -31,14 +33,18 @@ public class AppiumSetup {
         capabilities.setCapability("platformVersion", "10.3");
         capabilities.setCapability("platformName", "iOS");
         capabilities.setCapability("bundleId","com.bspot.casino101.test");
-        //capabilities.setCapability("app","/Users/swarn/Library/Developer/Xcode/DerivedData/lounge7-ghqqcotpptsuxbdibzyyuhpniali/Build/Products/Debug-iphonesimulator/lounge7.app");
-        capabilities.setCapability("app","/Users/swarn/Library/Developer/Xcode/DerivedData/lounge7-brsokuzbvogjlqfjpinkfxmqsymp/Build/Products/Debug-iphonesimulator/lounge7.app");
+        capabilities.setCapability("app","/Users/swarn/Library/Developer/Xcode/DerivedData/lounge7-ctydjkugkyirsncopsqdgicvqggl/Build/Products/Debug-iphonesimulator/lounge7.app");
+        //capabilities.setCapability("app","/Users/swarn/Library/Developer/Xcode/DerivedData/lounge7-ctydjkugkyirsncopsqdgicvqggl/Build/Products/Debug-iphoneos/lounge7.app");
+        //capabilities.setCapability("autoAcceptAlerts", true);
         //capabilities.setCapability("appPackage", "com.cucumberrntest");
         //capabilities.setCapability("appActivity", "com.cucumberrntest.MainActivity");
         //driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
 
 
+        //iPhone6
+        //capabilities.setCapability("udid","a3eb076b6f1d46fa40c3661ed928592df544b945");
 
+        //iPhone5s
         //capabilities.setCapability("udid","a8f3f946a84ebd9d573e6c359cfae7f358f55bcf");
         //capabilities.setCapability("automationName" ,  "XCUITest");
         /*final File classpathRoot= new File(System.getProperty("user.dir"));
@@ -47,7 +53,9 @@ public class AppiumSetup {
         capabilities.setCapability("app",app.getAbsolutePath());*/
         driver = new IOSDriver(new URL("http://0.0.0.0:4723/wd/hub"), capabilities);
         driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+
         //WebDriverRunner.setWebDriver(driver);
+
         System.out.println("called log");
     }
 

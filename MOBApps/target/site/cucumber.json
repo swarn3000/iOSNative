@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 31313217105,
+              "duration": 26217882207,
               "status": "passed"
             },
             "match": {
@@ -14,14 +14,14 @@
             }
           }
         ],
-        "line": 12,
+        "line": 13,
         "name": "Login to app with differnet username and passowrd using scenario outline",
         "description": "",
         "id": "test-login;login-to-app-with-differnet-username-and-passowrd-using-scenario-outline;;2",
         "after": [
           {
             "result": {
-              "duration": 587931282,
+              "duration": 554141074,
               "status": "passed"
             },
             "match": {
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 278063592,
+              "duration": 2474379960,
               "status": "passed"
             },
             "line": 7,
@@ -46,36 +46,39 @@
           },
           {
             "result": {
-              "duration": 2886527,
+              "duration": 63666,
               "status": "passed"
             },
-            "line": 8,
-            "name": "I enter credentials \"ValidUser\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "ValidUser",
-                  "offset": 21
-                }
-              ],
-              "location": "SD.iEnterCredentials(String)"
-            },
-            "matchedColumns": [
-              0
+            "comments": [
+              {
+                "line": 8,
+                "value": "#When I enter credentials \"\u003cusername\u003e\""
+              }
             ],
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 86562,
-              "status": "passed"
-            },
             "line": 9,
             "name": "I click on login button",
             "match": {
               "location": "SD.i_click_on_login_button()"
             },
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2657934,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I enter credentials \"abcd\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "abcd",
+                  "offset": 21
+                }
+              ],
+              "location": "SD.iEnterCredentials(String)"
+            },
+            "keyword": "When "
           }
         ],
         "tags": [
@@ -89,7 +92,7 @@
         "before": [
           {
             "result": {
-              "duration": 28469994031,
+              "duration": 24731833271,
               "status": "passed"
             },
             "match": {
@@ -97,14 +100,14 @@
             }
           }
         ],
-        "line": 13,
+        "line": 14,
         "name": "Login to app with differnet username and passowrd using scenario outline",
         "description": "",
         "id": "test-login;login-to-app-with-differnet-username-and-passowrd-using-scenario-outline;;3",
         "after": [
           {
             "result": {
-              "duration": 552859394,
+              "duration": 562031877,
               "status": "passed"
             },
             "match": {
@@ -117,7 +120,7 @@
         "steps": [
           {
             "result": {
-              "duration": 240772,
+              "duration": 2151711428,
               "status": "passed"
             },
             "line": 7,
@@ -129,36 +132,39 @@
           },
           {
             "result": {
-              "duration": 132920,
+              "duration": 64822,
               "status": "passed"
             },
-            "line": 8,
-            "name": "I enter credentials \"InvalidUser\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "InvalidUser",
-                  "offset": 21
-                }
-              ],
-              "location": "SD.iEnterCredentials(String)"
-            },
-            "matchedColumns": [
-              0
+            "comments": [
+              {
+                "line": 8,
+                "value": "#When I enter credentials \"\u003cusername\u003e\""
+              }
             ],
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 59844,
-              "status": "passed"
-            },
             "line": 9,
             "name": "I click on login button",
             "match": {
               "location": "SD.i_click_on_login_button()"
             },
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 115279,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I enter credentials \"abcd\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "abcd",
+                  "offset": 21
+                }
+              ],
+              "location": "SD.iEnterCredentials(String)"
+            },
+            "keyword": "When "
           }
         ],
         "tags": [

@@ -12,7 +12,7 @@ public class PageObject extends AppiumSetup {
     By textField2 = MobileBy.AccessibilityId("TextField2");
     By computeSum = MobileBy.AccessibilityId("ComputeSumButton");
     By result = MobileBy.AccessibilityId("Answer");
-
+///AppiumAUT/XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeImage/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeImage[2]
 
     public boolean isPageObject(){
         waitVar.until(ExpectedConditions.presenceOfElementLocated(computeSum));
