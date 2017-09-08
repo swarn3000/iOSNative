@@ -33,7 +33,8 @@ public class AppiumSetup {
         capabilities.setCapability("platformVersion", "10.3");
         capabilities.setCapability("platformName", "iOS");
         capabilities.setCapability("bundleId","com.bspot.casino101.test");
-        capabilities.setCapability("app","/Users/swarn/Library/Developer/Xcode/DerivedData/lounge7-ctydjkugkyirsncopsqdgicvqggl/Build/Products/Debug-iphonesimulator/lounge7.app");
+       // capabilities.setCapability("app","/Users/swarn/Library/Developer/Xcode/DerivedData/lounge7-ctydjkugkyirsncopsqdgicvqggl/Build/Products/Debug-iphonesimulator/lounge7.app");
+        capabilities.setCapability("app","/Users/cerebralfix/Library/Developer/Xcode/DerivedData/lounge7-bqltfamlnozrfefzpqabrcpvzbgn/Build/Products/Debug-iphonesimulator/lounge7.app");
         //capabilities.setCapability("app","/Users/swarn/Library/Developer/Xcode/DerivedData/lounge7-ctydjkugkyirsncopsqdgicvqggl/Build/Products/Debug-iphoneos/lounge7.app");
         //capabilities.setCapability("autoAcceptAlerts", true);
         //capabilities.setCapability("appPackage", "com.cucumberrntest");
