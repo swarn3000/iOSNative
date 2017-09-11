@@ -1,16 +1,10 @@
 package Setup;
-
-import io.appium.java_client.MobileBy;
-import io.appium.java_client.MobileElement;
-import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.ios.IOSDriver;
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
@@ -21,8 +15,9 @@ import java.util.concurrent.TimeUnit;
 public class AppiumSetup {
 
 
+    //public static AppiumDriver driver;
     public static WebDriver driver;
-    public static WebDriverWait waitVar;
+    //public static WebDriverWait waitVar;
 
 
     public void createDriver() throws MalformedURLException, InterruptedException{
@@ -33,8 +28,8 @@ public class AppiumSetup {
         capabilities.setCapability("platformVersion", "10.3");
         capabilities.setCapability("platformName", "iOS");
         capabilities.setCapability("bundleId","com.bspot.casino101.test");
-       // capabilities.setCapability("app","/Users/swarn/Library/Developer/Xcode/DerivedData/lounge7-ctydjkugkyirsncopsqdgicvqggl/Build/Products/Debug-iphonesimulator/lounge7.app");
-        capabilities.setCapability("app","/Users/cerebralfix/Library/Developer/Xcode/DerivedData/lounge7-bqltfamlnozrfefzpqabrcpvzbgn/Build/Products/Debug-iphonesimulator/lounge7.app");
+        //capabilities.setCapability("app","/Users/swarn/Library/Developer/Xcode/DerivedData/lounge7-ctydjkugkyirsncopsqdgicvqggl/Build/Products/Debug-iphonesimulator/lounge7.app");
+        capabilities.setCapability("app","/Users/cerebralfix/Library/Developer/Xcode/DerivedData/lounge7-cdhfrquecxrrngcfhktxoayaftxq/Build/Products/Debug-iphonesimulator/lounge7.app");
         //capabilities.setCapability("app","/Users/swarn/Library/Developer/Xcode/DerivedData/lounge7-ctydjkugkyirsncopsqdgicvqggl/Build/Products/Debug-iphoneos/lounge7.app");
         //capabilities.setCapability("autoAcceptAlerts", true);
         //capabilities.setCapability("appPackage", "com.cucumberrntest");

@@ -15,27 +15,27 @@ public class PageObject extends AppiumSetup {
 ///AppiumAUT/XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeImage/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeImage[2]
 
     public boolean isPageObject(){
-        waitVar.until(ExpectedConditions.presenceOfElementLocated(computeSum));
+        //waitVar.until(ExpectedConditions.presenceOfElementLocated(computeSum));
         return driver.findElement(computeSum).isDisplayed();
     }
 
     public void typeTextField1(String text){
-        waitVar.until(ExpectedConditions.presenceOfElementLocated(textField1));
+        //waitVar.until(ExpectedConditions.presenceOfElementLocated(textField1));
         driver.findElement(textField1).sendKeys(text);
     }
 
     public void typeTextField2(String text){
-        waitVar.until(ExpectedConditions.presenceOfElementLocated(textField2));
+        //waitVar.until(ExpectedConditions.presenceOfElementLocated(textField2));
         driver.findElement(textField2).sendKeys(text);
     }
 
     public void clickComputeSum(){
-        waitVar.until(ExpectedConditions.presenceOfElementLocated(computeSum));
+        //waitVar.until(ExpectedConditions.presenceOfElementLocated(computeSum));
         driver.findElement(computeSum).click();
     }
 
     public String returnResult(){
-        waitVar.until(ExpectedConditions.presenceOfElementLocated(result));
+        //waitVar.until(ExpectedConditions.presenceOfElementLocated(result));
         return driver.findElement(result).getText();
     }
 }

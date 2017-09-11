@@ -5,9 +5,9 @@ Feature: Test Login
   @Login
   Scenario Outline: Login to app with differnet username and passowrd using scenario outline
     Given I open application on device
-    #When I enter credentials "<username>"
     Then I click on login button
-    When I enter credentials "abcd"
+    When I enter credentials "bspot@ce" as username
+    When I enter the credentials "rebralfix.com" as username
     Examples:
       | username    |
       | bspot@Cerebralfix.com   |

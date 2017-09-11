@@ -1,4 +1,24 @@
 -------------------------------------------------------------------------------
 Test set: Setup.RunCukesTest
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 57.619 sec
+Tests run: 12, Failures: 0, Errors: 4, Skipped: 8, Time elapsed: 136.075 s <<< FAILURE! - in Setup.RunCukesTest
+| bspot@Cerebralfix.com |  Time elapsed: 57.862 s  <<< ERROR!
+org.openqa.selenium.SessionNotCreatedException: 
+Unable to create new remote session. desired capabilities = Capabilities [{app=/Users/cerebralfix/Library/Developer/Xcode/DerivedData/lounge7-cdhfrquecxrrngcfhktxoayaftxq/Build/Products/Debug-iphonesimulator/lounge7.app, appium-version=1.6, platformVersion=10.3, bundleId=com.bspot.casino101.test, browserName=, platformName=iOS, deviceName=iPhone 7 Plus}], required capabilities = Capabilities [{}]
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'cf-mac-020.local', ip: '192.168.1.148', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.6', java.version: '1.8.0_144'
+Driver info: driver.version: IOSDriver
+
+| bspot@Cerebralfix.com |  Time elapsed: 57.879 s  <<< ERROR!
+java.lang.NullPointerException
+
+| bsoptt@Cerebralfix.com |  Time elapsed: 57.469 s  <<< ERROR!
+org.openqa.selenium.SessionNotCreatedException: 
+Unable to create new remote session. desired capabilities = Capabilities [{app=/Users/cerebralfix/Library/Developer/Xcode/DerivedData/lounge7-cdhfrquecxrrngcfhktxoayaftxq/Build/Products/Debug-iphonesimulator/lounge7.app, appium-version=1.6, platformVersion=10.3, bundleId=com.bspot.casino101.test, browserName=, platformName=iOS, deviceName=iPhone 7 Plus}], required capabilities = Capabilities [{}]
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'cf-mac-020.local', ip: '192.168.1.148', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.6', java.version: '1.8.0_144'
+Driver info: driver.version: IOSDriver
+
+| bsoptt@Cerebralfix.com |  Time elapsed: 57.484 s  <<< ERROR!
+java.lang.NullPointerException
+

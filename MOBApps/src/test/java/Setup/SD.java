@@ -5,9 +5,6 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
-//import static com.codeborne.selenide.Selenide.page;
-import static junit.framework.TestCase.assertTrue;
-
 /**
  * Created by Swarn on 8/20/2017.
  */
@@ -58,15 +55,24 @@ public class SD {
         //throw new PendingException();
     }
 
-    @When("^I enter credentials \"([^\"]*)\"$")
-    public void iEnterCredentials(String arg0) throws Throwable {
+    //@When("^I enter credentials (.*)$")
+    @When("^I enter credentials \"([^\"]*)\" as username$")
+    public void iEnterCredentialsAsUsername(String arg0) throws Throwable {
 //comment
-        //homePage.ok(arg0);
+        //homePage.sendChar(arg0);
+        homePage.ok(arg0);
         //homePage.fillin(arg0);
         //homePage.typeEmailAddress(arg0);
         //System.out.println("cerd");
         //homePage.ok(arg0);
         // Write code here that turns the phrase above into concrete actions
         //throw new PendingException();
+    }
+
+    @When("^I enter the credentials \"([^\"]*)\" as username$")
+    public void iEnterTheCredentialsAsUsername(String arg0) throws Throwable {
+        homePage.ok(arg0);
+        // Write code here that turns the phrase above into concrete actions
+        throw new PendingException();
     }
 }

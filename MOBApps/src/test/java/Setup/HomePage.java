@@ -1,19 +1,20 @@
 package Setup;
 
 //import com.codeborne.selenide.SelenideElement;
+
+
 import io.appium.java_client.MobileBy;
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.concurrent.TimeUnit;
 
 /**
  * Created by Swarn on 8/20/2017.
  */
-public class HomePage extends AppiumSetup {
+public class HomePage extends AppiumSetup{
+
 
 
     /*public void handlepopup(){
@@ -26,18 +27,18 @@ public class HomePage extends AppiumSetup {
     }*/
 
     //By test = MobileBy.xpath("/AppiumAUT/XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeImage");
-     //By test = MobileBy.xpath("/AppiumAUT/XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeImage/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeImage[2]");
+    //By test = MobileBy.xpath("/AppiumAUT/XCUIElementTypeApplication/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeImage/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeImage[2]");
     By ClickOK = MobileBy.AccessibilityId("PermissionCheckForLocationAndAge");
-  // By test = MobileBy.AccessibilityId("Allow");
+    // By test = MobileBy.AccessibilityId("Allow");
     By ClickCreateAccountButton = MobileBy.AccessibilityId("GoToCreateAccountButtonID");
     By CLickLoginButton = MobileBy.AccessibilityId("GoToLoginID");
-   // By EmailTextField = MobileBy.AccessibilityId("Email");
-   //By test1 = MobileBy.AccessibilityId("Like what you see? Create Account Login Try out in demo mode");
-   //By test1 = MobileBy.IosUIAutomation("OK");
-   //By test1 = MobileBy.AccessibilityId("OK");
-   //By check = MobileBy.AccessibilityId("Email");
+    By EmailTextField = MobileBy.AccessibilityId("Email");
+    //By test1 = MobileBy.AccessibilityId("Like what you see? Create Account Login Try out in demo mode");
+    //By test1 = MobileBy.IosUIAutomation("OK");
+    //By test1 = MobileBy.AccessibilityId("OK");
+    //By check = MobileBy.AccessibilityId("Email");
 
-    public void clickokk(){
+    public void clickokk() {
 
         //driver.findElement(test).click();
         //driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
@@ -49,12 +50,29 @@ public class HomePage extends AppiumSetup {
 
 
     }
+ /*   public void sendChar(By  , String text) {
+        EmailTextField.clear();
 
-    /*public void ok(String text){
-    driver.findElement(EmailTextField).sendKeys(text);
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        //driver.findElement(By.linkText(text));
+        for (int i = 0; i < text.length(); i++) {
+            char c = text.charAt(i);
+            String s = new StringBuilder().append(c).toString();
+            EmailTextField.sendKeys(s);
+        }
     }*/
+
+    public void ok(String text) {
+
+        driver.findElement(EmailTextField).click();
+        driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+        driver.findElement(EmailTextField).clear();
+        driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+
+
+        driver.findElement(EmailTextField).sendKeys(text);
+        //waitVar.until(ExpectedConditions.visibilityOf(EmailTextField));
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        //driver.findElement(By.linkText(text));
+    }
 
 //   public void fillin(){
 //
@@ -70,10 +88,10 @@ public class HomePage extends AppiumSetup {
   /*  By textField1 = MobileBy.AccessibilityId("Email");
     By textField2 = MobileBy.AccessibilityId("Password");
     By Loginbutton = MobileBy.AccessibilityId("Login");*/
-    //By result = MobileBy.AccessibilityId("Answer");
+//By result = MobileBy.AccessibilityId("Answer");
 
 
-    // All the behavior of home page will be defined here in functions
+// All the behavior of home page will be defined here in functions
 /*    public boolean isHomePage(){
         waitVar.until(ExpectedConditions.presenceOfElementLocated(Loginbutton));
         return driver.findElement(Loginbutton).isDisplayed();
